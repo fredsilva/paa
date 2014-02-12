@@ -2,6 +2,7 @@
 Força Bruta
 Projeto e Análise de Algoritmos
 UFT - Universidade Federal do Tocantins
+Autor: Frederico da Silva Santos
 '''
 
 from random import randint, shuffle, choice
@@ -41,6 +42,7 @@ def busca_sequencial(item, lista):
 			return i	
 	return False
 
+
 def compara_strings(texto, amostra):
 	'''
 	Comparação de strings por força bruta
@@ -51,13 +53,13 @@ def compara_strings(texto, amostra):
 				return True
 	return False			
 
+
 def sub_string(texto, sub_amostra):
 	'''
 	Comparação de substrings dentro de uma string
 	'''	
 	for i, caracter in enumerate(sub_amostra):
-		if texto[i] != caracter:
-			tempo_exe = time() - inicio			
+		if texto[i] != caracter:			
 			return False		
 	return True
 
@@ -85,6 +87,7 @@ def gera_lista(n):
 	shuffle(lista)
 	return lista
 
+
 def gera_pontos(n):
 	'''
 	Gera uma lista de pontos com tamanho N
@@ -93,6 +96,7 @@ def gera_pontos(n):
 	while len(pontos) < n:
 		pontos.append((randint(0,100), randint(0,100)))
 	return pontos
+
 
 def gera_string(n):
 	'''
